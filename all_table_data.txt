@@ -1,0 +1,239 @@
+[
+  {
+    "Shipment Mode\n\nLTL\n\n\n\n\nCreated on\n\n\n10/18/2018\n\n\n\nRequested Pickup Date\n\n\n10/19/2018\n\n\n\n\n\n\nBOL# (GlobalTranz)\n\n16480425\n\n\n\nBOL# (Customer)\n\n\n\n\n\n\n\n\n\n\nPRO# (Carrier)\n\n472225838\n\n\n\nP/U# (Carrier)\n\n011911229\n\n\n\nREF# (Customer)\n\n\n\n\n\n\n\n\n\n\n\n\n\nPO# (Customer)": "Shipment Mode",
+    "Shipment Mode": "LTL"
+  },
+  {
+    "Shipment Mode\n\nLTL\n\n\n\n\nCreated on\n\n\n10/18/2018\n\n\n\nRequested Pickup Date\n\n\n10/19/2018\n\n\n\n\n\n\nBOL# (GlobalTranz)\n\n16480425\n\n\n\nBOL# (Customer)\n\n\n\n\n\n\n\n\n\n\nPRO# (Carrier)\n\n472225838\n\n\n\nP/U# (Carrier)\n\n011911229\n\n\n\nREF# (Customer)\n\n\n\n\n\n\n\n\n\n\n\n\n\nPO# (Customer)": "Created on",
+    "Shipment Mode": "10/18/2018"
+  },
+  {
+    "Shipment Mode\n\nLTL\n\n\n\n\nCreated on\n\n\n10/18/2018\n\n\n\nRequested Pickup Date\n\n\n10/19/2018\n\n\n\n\n\n\nBOL# (GlobalTranz)\n\n16480425\n\n\n\nBOL# (Customer)\n\n\n\n\n\n\n\n\n\n\nPRO# (Carrier)\n\n472225838\n\n\n\nP/U# (Carrier)\n\n011911229\n\n\n\nREF# (Customer)\n\n\n\n\n\n\n\n\n\n\n\n\n\nPO# (Customer)": "Requested Pickup Date",
+    "Shipment Mode": "10/19/2018"
+  },
+  {
+    "Shipment Mode\n\nLTL\n\n\n\n\nCreated on\n\n\n10/18/2018\n\n\n\nRequested Pickup Date\n\n\n10/19/2018\n\n\n\n\n\n\nBOL# (GlobalTranz)\n\n16480425\n\n\n\nBOL# (Customer)\n\n\n\n\n\n\n\n\n\n\nPRO# (Carrier)\n\n472225838\n\n\n\nP/U# (Carrier)\n\n011911229\n\n\n\nREF# (Customer)\n\n\n\n\n\n\n\n\n\n\n\n\n\nPO# (Customer)": "BOL# (GlobalTranz)",
+    "Shipment Mode": "16480425"
+  },
+  {
+    "Shipment Mode\n\nLTL\n\n\n\n\nCreated on\n\n\n10/18/2018\n\n\n\nRequested Pickup Date\n\n\n10/19/2018\n\n\n\n\n\n\nBOL# (GlobalTranz)\n\n16480425\n\n\n\nBOL# (Customer)\n\n\n\n\n\n\n\n\n\n\nPRO# (Carrier)\n\n472225838\n\n\n\nP/U# (Carrier)\n\n011911229\n\n\n\nREF# (Customer)\n\n\n\n\n\n\n\n\n\n\n\n\n\nPO# (Customer)": "BOL# (Customer)",
+    "Shipment Mode": ""
+  },
+  {
+    "Shipment Mode\n\nLTL\n\n\n\n\nCreated on\n\n\n10/18/2018\n\n\n\nRequested Pickup Date\n\n\n10/19/2018\n\n\n\n\n\n\nBOL# (GlobalTranz)\n\n16480425\n\n\n\nBOL# (Customer)\n\n\n\n\n\n\n\n\n\n\nPRO# (Carrier)\n\n472225838\n\n\n\nP/U# (Carrier)\n\n011911229\n\n\n\nREF# (Customer)\n\n\n\n\n\n\n\n\n\n\n\n\n\nPO# (Customer)": "PRO# (Carrier)",
+    "Shipment Mode": "472225838"
+  },
+  {
+    "Shipment Mode\n\nLTL\n\n\n\n\nCreated on\n\n\n10/18/2018\n\n\n\nRequested Pickup Date\n\n\n10/19/2018\n\n\n\n\n\n\nBOL# (GlobalTranz)\n\n16480425\n\n\n\nBOL# (Customer)\n\n\n\n\n\n\n\n\n\n\nPRO# (Carrier)\n\n472225838\n\n\n\nP/U# (Carrier)\n\n011911229\n\n\n\nREF# (Customer)\n\n\n\n\n\n\n\n\n\n\n\n\n\nPO# (Customer)": "P/U# (Carrier)",
+    "Shipment Mode": "011911229"
+  },
+  {
+    "Shipment Mode\n\nLTL\n\n\n\n\nCreated on\n\n\n10/18/2018\n\n\n\nRequested Pickup Date\n\n\n10/19/2018\n\n\n\n\n\n\nBOL# (GlobalTranz)\n\n16480425\n\n\n\nBOL# (Customer)\n\n\n\n\n\n\n\n\n\n\nPRO# (Carrier)\n\n472225838\n\n\n\nP/U# (Carrier)\n\n011911229\n\n\n\nREF# (Customer)\n\n\n\n\n\n\n\n\n\n\n\n\n\nPO# (Customer)": "REF# (Customer)",
+    "Shipment Mode": ""
+  },
+  {
+    "Shipment Mode\n\nLTL\n\n\n\n\nCreated on\n\n\n10/18/2018\n\n\n\nRequested Pickup Date\n\n\n10/19/2018\n\n\n\n\n\n\nBOL# (GlobalTranz)\n\n16480425\n\n\n\nBOL# (Customer)\n\n\n\n\n\n\n\n\n\n\nPRO# (Carrier)\n\n472225838\n\n\n\nP/U# (Carrier)\n\n011911229\n\n\n\nREF# (Customer)\n\n\n\n\n\n\n\n\n\n\n\n\n\nPO# (Customer)": "PO# (Customer)",
+    "Shipment Mode": ""
+  },
+  {
+    "Shipment Mode": "Created on",
+    "LTL": "10/18/2018"
+  },
+  {
+    "Shipment Mode": "Requested Pickup Date",
+    "LTL": "10/19/2018"
+  },
+  {
+    "Shipment Mode": "BOL# (GlobalTranz)",
+    "LTL": "16480425"
+  },
+  {
+    "Shipment Mode": "BOL# (Customer)",
+    "LTL": ""
+  },
+  {
+    "Shipment Mode": "PRO# (Carrier)",
+    "LTL": "472225838"
+  },
+  {
+    "Shipment Mode": "P/U# (Carrier)",
+    "LTL": "011911229"
+  },
+  {
+    "Shipment Mode": "REF# (Customer)",
+    "LTL": ""
+  },
+  {
+    "Shipment Mode": "PO# (Customer)",
+    "LTL": ""
+  },
+  {
+    "Estimated Delivery Date": "Estimated Delivery Time",
+    "": ""
+  },
+  {
+    "Estimated Delivery Date": "Current Location",
+    "": ""
+  },
+  {
+    "Estimated Delivery Date": "Last Tracked",
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": "Saint Louis, MO"
+  },
+  {
+    "": "USA 63122"
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": "Las Vegas, NV"
+  },
+  {
+    "": "USA 89103"
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "Shipment Rate": "Fuel Surcharge",
+    "$1382.79": "$85.87"
+  },
+  {
+    "Shipment Rate": "Discount",
+    "$1382.79": "($1064.76)"
+  },
+  {
+    "BOL 16480425": "Insurance Certificate"
+  },
+  {
+    "BOL 16480425": "NAFTA (Certificate of origin)"
+  },
+  {
+    "BOL 16480425": "Customs Invoice"
+  },
+  {
+    "BOL 16480425": "NAFTA"
+  },
+  {
+    "BOL 16480425": "Customs Invoice"
+  },
+  {
+    "Unit Type": "Pallets(non-standard)",
+    "# Units": "1",
+    "# PCs": "0",
+    "Class": "300",
+    "Weight(lbs)": "275.0",
+    "Product Description": "novelty",
+    "NMFC": "56290-02",
+    "HazMat?": "No",
+    "": "Details"
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "": ""
+  },
+  {
+    "Please note that in order to successfully submit a claim, you will be required to attach the original invoice and signed BOL. Any additional documents such as color photos, delivery receipt, packing slip or repair estimate should be attached in PDF format. Total memory allows for documents is not to exceed 4 MB.": ""
+  }
+]
