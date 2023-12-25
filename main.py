@@ -3,75 +3,87 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 import json
+import sys
 
-chrome_options = webdriver.ChromeOptions()
-chrome_options.add_experimental_option("detach", True)
-driver = webdriver.Chrome(chrome_options)
 
-url_path = "https://carrierrate.globaltranz.com/cr2/Account/Login"
-driver.get(url_path)
-user_name = driver.find_element(By.XPATH, '//*[@id="txtUserName"]')
-password = driver.find_element(By.XPATH, '//*[@id="txtPassword"]')
-login = driver.find_element(By.XPATH, '//*[@id="login_wrapper"]/div[2]/div/div[1]/div[4]/div[2]/input')
-user_name.send_keys('blossomhill')
-password.send_keys('Shipping107')
-login.click()
+def scrape_data(url):
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_experimental_option("detach", True)
+    driver = webdriver.Chrome(chrome_options)
 
-time.sleep(30)
+    driver.get(url)
 
-foam_1 = driver.find_element(By.XPATH, '//*[@id="reportGrid"]/div/div[2]/div[2]/div/div[1]/div/div[1]/div')
-foam_1.click()
+    user_name = driver.find_element(By.XPATH, '//*[@id="txtUserName"]')
+    password = driver.find_element(By.XPATH, '//*[@id="txtPassword"]')
+    login = driver.find_element(By.XPATH, '//*[@id="login_wrapper"]/div[2]/div/div[1]/div[4]/div[2]/input')
+    user_name.send_keys('blossomhill')
+    password.send_keys('Shipping107')
+    login.click()
 
-time.sleep(10)
+    time.sleep(30)
 
-# Get the page source after the dynamic content is loaded
-page_source = driver.page_source
+    foam_1 = driver.find_element(By.XPATH, '//*[@id="reportGrid"]/div/div[2]/div[2]/div/div[1]/div/div[1]/div')
+    foam_1.click()
 
-soup = BeautifulSoup(page_source, 'html.parser')
-tables = soup.find_all('table')
+    time.sleep(10)
 
-# Initialize a list to hold data for all tables
-all_table_data = []
+    # Get the page source after the dynamic content is loaded
+    page_source = driver.page_source
 
-# Iterate through each table
-for table_index, table in enumerate(tables):
-    print(f"Processing Table {table_index + 1}")
+    soup = BeautifulSoup(page_source, 'html.parser')
+    tables = soup.find_all('table')
 
-    # Extract table data into a list of dictionaries for each table
-    table_data = []
+    # Initialize a list to hold data for all tables
+    all_table_data = []
 
-    # Find all rows in the table
-    rows = table.find_all('tr')
+    # Iterate through each table
+    for table_index, table in enumerate(tables):
+        print(f"Processing Table {table_index + 1}")
 
-    # Check if there are rows available
-    if rows:
-        # Extract headers from the first row
-        headers = [header.text.strip() for header in rows[0].find_all(['th', 'td'])]
-        print("Headers:", headers)
+        # Extract table data into a list of dictionaries for each table
+        table_data = []
 
-        for row_index, row in enumerate(rows[1:]):
-            row_data = {headers[i]: cell.text.strip() for i, cell in enumerate(row.find_all(['th', 'td']))}
-            table_data.append(row_data)
-            print(f"Row {row_index + 1} Data:", row_data)
+        # Find all rows in the table
+        rows = table.find_all('tr')
 
-        # Append table data to the list for all tables
-        all_table_data.extend(table_data)
+        # Check if there are rows available
+        if rows:
+            # Extract headers from the first row
+            headers = [header.text.strip() for header in rows[0].find_all(['th', 'td'])]
+            print("Headers:", headers)
+
+            for row_index, row in enumerate(rows[1:]):
+                row_data = {headers[i]: cell.text.strip() for i, cell in enumerate(row.find_all(['th', 'td']))}
+                table_data.append(row_data)
+                print(f"Row {row_index + 1} Data:", row_data)
+
+            # Append table data to the list for all tables
+            all_table_data.extend(table_data)
+        else:
+            print("No rows found in the table.")
+        print()
+
+    # Convert the table data for all tables to JSON
+    if all_table_data:
+        json_data = json.dumps(all_table_data, indent=2)
+        print("JSON Data:", json_data)
+
+        # Save the JSON data to a text file
+        with open('all_table_data.txt', 'w') as file:
+            file.write(json_data)
+        print("Data saved to 'all_table_data.txt'")
     else:
-        print("No rows found in the table.")
-    print()
+        print("No tables found on the page.")
 
-# Convert the table data for all tables to JSON
-if all_table_data:
-    json_data = json.dumps(all_table_data, indent=2)
-    print("JSON Data:", json_data)
+    driver.quit()
 
-    # Save the JSON data to a text file
-    with open('all_table_data.txt', 'w') as file:
-        file.write(json_data)
-    print("Data saved to 'all_table_data.txt'")
-else:
-    print("No tables found on the page.")
 
-# ... (rest of your existing code)
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python script_name.py <url>")
+        sys.exit(1)
 
-driver.quit()
+    url_path = sys.argv[1]
+    scrape_data(url_path)
+
+
